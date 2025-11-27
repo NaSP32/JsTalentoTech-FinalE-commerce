@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    /*1rem = 10px */
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem;
+
+    background-color: #E8989F;
+    color: #FAEFC4;
+
+    display: flex;
+    flex-direction: column;
+
+    /*El body siempre ocupe pantalla completa*/
+    height: 100vh;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    /*Que el main tome todo el espacio disponible*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+
+}
+
+h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.btn{
+    background:#E8989F;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+button:hover{
+    background-color:#FAEFC4;
+}
+
+header,
+footer{
+    background: #F9CAD0;
+    color:#E8989F ;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-log{
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+
+
+}
+
+.logo, .header-nav ul li a {
+    text-decoration: none;
+    font-size: 3rem;
+    /*Inherit hereda el color del padre -- en este caso header*/
+    color: inherit;
+    display: inline-block;
+    padding: 2rem;
+
+}
+
+.header-nav{
+    margin-right: 2rem;
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+.footer-parrafo{
+    margin: 3rem;
+    
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+       
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+   
+}
+
+footer nav ul li {
+    padding: 1rem;
+    
+    
+}
+
+footer nav ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*HOME*/
+
+.titulo-home{
+    margin: 3rem 0;
+}
+.titulo-productos{
+    
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.parrafo{
+     width: 80%;
+     text-align: center;
+     font-size: 2rem;
+     padding: 3rem;
+
+}
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    background-color: #F9CAD0;
+    color: #E8989F;
+
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img {
+    width: 100%;
+    
+}
+
+/*CONTACTO*/
+
+.titulo-contacto{
+    margin: 2rem 0;
+}
+
+.form-contacto{
+    background-color: #F9CAD0;
+    color: #FAEFC4;
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+
+    box-shadow: 0 10px 30px #6d236a;
+}
+
+.grupo-input{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.grupo-input input, 
+.grupo-input textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px #e0e898;
+    margin-bottom: 3rem;
+}
+/*MEDIA QUERYS*/
+
+@media (max-width:768px){
+    header, footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .div-log, .header-nav {
+        margin: 0;
+    }
+
+    .contenenedor-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+}
