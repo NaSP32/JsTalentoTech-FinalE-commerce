@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,400;0,600;0,800;1,400;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Tienda</title>
+    <title>Carrito</title>
   </head>
   <body>
     <header>
@@ -25,29 +25,17 @@
       </nav>
     </header>
     <main>
-        <h1 class="titulo-contacto">Contactanos</h1>
-        <!-- modify this form HTML and place wherever you want your form -->
-        <form class="form-contacto"
-        action="https://formspree.io/f/xjkaedov"
-        method="POST"
-        >
-
-        <div class="grupo-input">
-            <label for="email">Tu email:</label>
-            <input id="email" type="email" name="email">
-        </div>
-
-        <div class="grupo-input"> 
-            <label for="mensaje">Tu mensaje:</label>
-            <textarea id="mensaje" name="message"></textarea>
-        </div>
-
-        <!-- your other form fields go here -->
-        <button class="btn" type="submit">Send</button>
-        </form>
-
-
+        <h1>Carrito de Compras</h1>
+        <section id="contenedor-carrito">
+            <!--Productos del carrito-->
+        </section>
+        <div class="acciones-carrito" id="acciones-carrito"></div>
+        <!--Botones de eliminar y finalizar compra. Se agregan desde Js-->
+        <section id="resumen-carrito">
+            <!--Aca va el resumen del carrito-->
+        </section>
     </main>
+
     <footer>
       <p>Sitio realizado por Nadia Pereyra para Talento Tech</p>
       <nav>
@@ -58,6 +46,7 @@
       </nav>
 
     </footer>
+    <script type="module" src="../js/carrito.js"></script>
     
 </body>
 </html>
