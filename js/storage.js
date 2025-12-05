@@ -10,7 +10,7 @@ export const obtenerCarrito = () => {
 
 }
 
-export const vaciarCarrito = () => {
+export const vaciarCarritoStorage = () => {
     localStorage.removeItem(KEY)
 
 }

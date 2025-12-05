@@ -60,6 +60,10 @@ h2{
     border-radius: 1rem;
 }
 
+.btn-eliminar-carrito{
+    background-color:#f1300a;
+}
+
 button:hover{
     background-color:#FAEFC4;
 }
@@ -185,10 +189,10 @@ footer nav ul li a{
 
 .form-contacto{
     background-color: #F9CAD0;
-    color: #FAEFC4;
+    color: #ffffff;
     width: 100%;
     max-width: 50rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     padding: 3rem;
     border-radius: 1rem;
 
@@ -207,9 +211,24 @@ footer nav ul li a{
 .grupo-input textarea{
     border: none;
     background-color: transparent;
-    border-bottom: solid 2px #e0e898;
+    border-bottom: solid 2px #ffffff;
     margin-bottom: 3rem;
 }
+
+/*Carrito Nuevo 1:10*/
+.btn-vaciar-carrito{
+    background:#E8989F;
+    color: white;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+
+
+
 /*MEDIA QUERYS*/
 
 @media (max-width:768px){
